@@ -29,6 +29,5 @@ jobs:
 
     - name: Check Build Status
       if: success()
-      echo "Build Success"
-      else:
-        echo "Build Failed"
+      run: echo "Build Success"
+
