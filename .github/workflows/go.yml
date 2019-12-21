@@ -27,7 +27,6 @@ jobs:
     - name: Build
       run: go build -v .
 
-    - name: Check Build Status
-      if: success()
-      run: echo "Build Success"
-
+    - name: My backup step
+      if: failure()
+      run: echo "hello"
